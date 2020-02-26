@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos JSON 1</title>
+</head>
+<body>
+    <div id="info"></div>
+    <script type="text/javascript">
+
+    var personaJSON = {
+        "nombre" : "Luis",
+        "apellido" : "Gomez",
+        "edad" : 20,
+        "salario": 2000
+    };
+
+    //document.write(personaJSON.nombre + " tiene "+ personaJSON.edad + " anhos");
+    //document.write(personaJSON.edad);
+    var cliente = "";
+
+    cliente += "Nombre: " + personaJSON.nombre + "<br>";
+    cliente += "Apellido: " + personaJSON.apellido + "<br>";
+    cliente += "Edad: " + personaJSON.edad + "<br>";
+    cliente += "Salario: " + personaJSON.salario + "<br>";
+
+    var elento = document.getElementById("info");
+    elento.innerHTML = cliente;
+</script>
+</body>
+</html>
